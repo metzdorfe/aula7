@@ -30,7 +30,7 @@ namespace aula7
             IImpressora termica = new ImpressoraTermica();
             laser.Imprimir("Relatorio mensal");
             jato.Imprimir("Foto de familia");
-            termica.Imprimir("Cupom fiscal");
+            termica.Imprimir("Boleto");
             Console.WriteLine();
 
             // Exercicio 4
@@ -58,7 +58,7 @@ namespace aula7
 
             // Exercicio 7
             Produto produtoNormal = new ProdutoNormal("Caneta", 10);
-            Produto produtoAtacado = new ProdutoAtacado("Caixa de Papel", 5, 20);
+            Produto produtoAtacado = new ProdutoAtacado("Batata", 5, 20);
             produtoNormal.Repor(5);
             produtoNormal.Vender(20);
             produtoAtacado.Repor(5);
@@ -89,9 +89,9 @@ namespace aula7
 
             // Exercicio 10
             List<Equipamento> equipamentos = new List<Equipamento>();
-            equipamentos.Add(new Esteira("Movement"));
-            equipamentos.Add(new Bicicleta("Spinning Pro"));
-            equipamentos.Add(new Halter("Anilha 10kg"));
+            equipamentos.Add(new Esteira("Supino"));
+            equipamentos.Add(new Bicicleta("Esteira"));
+            equipamentos.Add(new Halter("Anilha"));
 
             foreach (Equipamento e in equipamentos)
             {
